@@ -6,83 +6,77 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": true,
 						"internalType": "uint256",
-						"name": "itemId",
-						"type": "uint256"
-					},
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "seller",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "price",
+						"name": "_goal",
 						"type": "uint256"
 					}
 				],
-				"name": "ItemListed",
-				"type": "event"
+				"stateMutability": "nonpayable",
+				"type": "constructor"
 			},
 			{
 				"anonymous": false,
 				"inputs": [
 					{
 						"indexed": true,
-						"internalType": "uint256",
-						"name": "itemId",
-						"type": "uint256"
-					},
-					{
-						"indexed": true,
 						"internalType": "address",
-						"name": "buyer",
-						"type": "address"
-					},
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "seller",
+						"name": "donor",
 						"type": "address"
 					},
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "price",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
-				"name": "ItemPurchased",
+				"name": "Donated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdrawn",
 				"type": "event"
 			},
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "Donations",
+				"outputs": [
+					{
 						"internalType": "uint256",
-						"name": "_itemId",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "buyItem",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "donate",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "itemCount",
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -94,58 +88,47 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "goal",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "items",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
 				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address payable",
-						"name": "seller",
+						"internalType": "address",
+						"name": "",
 						"type": "address"
-					},
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "price",
-						"type": "uint256"
-					},
-					{
-						"internalType": "bool",
-						"name": "isSold",
-						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
+				"inputs": [],
+				"name": "totalRaised",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "_price",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "listItem",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -164,7 +147,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Shopping.sol": "ShoppingApp"
+			"Fundraising.sol": "FundsRaising"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -178,12 +161,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Shopping.sol": {
-			"keccak256": "0xb90fc82c134c3f16f33957894799b1de2be01764690c574d089e401d7c4feac0",
+		"Fundraising.sol": {
+			"keccak256": "0x22627ec1bb5693671711b720b5da17a60e5fe1e25b36894ae42785cf2f4ab2c7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://aee6b1e1bdbeb2bca585915d9cd34f19e8c5c7fab9ae3e17f5461eec7a5fbbd2",
-				"dweb:/ipfs/QmVqoVVAauLw28NThVn9R2anX7xT2eDfmAzL9HocM5YLRw"
+				"bzz-raw://29d721e90a75600028f843d06c663b14ce53abf8c60782cfc40e08134297902b",
+				"dweb:/ipfs/QmZFcySYGDwZVFJajjdaigXfqXje1o1QiuPk3GvM9QVkgR"
 			]
 		}
 	},

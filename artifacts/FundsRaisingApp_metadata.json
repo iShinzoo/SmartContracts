@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Fundraising.sol": "FundsRaisingApp"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Fundraising.sol": {
+			"keccak256": "0xdb89235e9e0dd9afe786542d235266f1c5d8020ab11d016ce5dc85c9990b2240",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8281a03f68c9f2458909edbff17dba891ced1ed37eeceea851b4203955355caf",
+				"dweb:/ipfs/QmWUsALuXpWNdmc8HLzvM2sveJhAeeo6eVuHtcu3woTmvw"
+			]
+		}
+	},
+	"version": 1
+}
