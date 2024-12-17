@@ -68,7 +68,13 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
 				"name": "donate",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -162,11 +168,11 @@
 	},
 	"sources": {
 		"Fundraising.sol": {
-			"keccak256": "0x22627ec1bb5693671711b720b5da17a60e5fe1e25b36894ae42785cf2f4ab2c7",
+			"keccak256": "0x2c414e52ec82fc6229c0daf61e4ea39741bfff339f133cecd1f27d42132b90b2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://29d721e90a75600028f843d06c663b14ce53abf8c60782cfc40e08134297902b",
-				"dweb:/ipfs/QmZFcySYGDwZVFJajjdaigXfqXje1o1QiuPk3GvM9QVkgR"
+				"bzz-raw://1ae261cf19e486dd19551ed6756b7cf5745fed6ba41172eea3f9c6082cb9c73e",
+				"dweb:/ipfs/QmQSWVWKRemGnMyz3ninvXN38WawtAu282AqEgRBJ6NJVC"
 			]
 		}
 	},

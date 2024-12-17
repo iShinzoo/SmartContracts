@@ -22,10 +22,11 @@ contract FundsRaising{
         goal = _goal;
     }
 
-    function donate()
+    function donate(uint256 amount)
     external 
     payable 
     {
+        require(msg.value == amount, "Mismatch between amount and msg.value");
         require(msg.value > 0,"Donation amount should be greater than 0");
         Donations[msg.sender] += msg.value;
         totalRaised += msg.value;
