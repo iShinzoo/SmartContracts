@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenB",
+						"type": "address"
+					}
+				],
+				"name": "createPair",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "pair",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ethtoken.sol": "IUniswapV2Factory"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ethtoken.sol": {
+			"keccak256": "0x6a6de909436772388d321408128dd7e667efbb5119af7160faae9c7db247ddfe",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5e4206365e474fc335197d5fee7a47bec7fc409eb8acfaf478e9ac73c47f7d2d",
+				"dweb:/ipfs/QmX1ToGK9mTzGMFphDsSWPmiQkPbTG3p4EkWs95mhD8sQp"
+			]
+		}
+	},
+	"version": 1
+}
